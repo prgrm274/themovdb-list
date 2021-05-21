@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/movie_card"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/img_poster_movie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_cinema" />
+
+        <TextView
+            android:padding="@dimen/dimens_8dp"
+            android:id="@+id/txt_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            tools:text="10"
+            android:background="@drawable/bg"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_title_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_margin="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Avengers"
+        android:textAppearance="@style/TitleTextTheme" />
+
+</LinearLayout>
